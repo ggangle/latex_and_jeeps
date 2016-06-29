@@ -1,0 +1,16 @@
+<a href="/">Home</a>
+
+<h1>Add a new album</h1>
+
+<%= form_for @album do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title, :placeholder => "\"Space Station\"" %>
+  <br>
+  <br>
+  <%= a.label :caption %>
+  <%= a.text_area :caption, :placeholder => "\"Our space station trip\"" %>
+  <br>
+  <br>
+  <%= a.submit "Add Album" %>
+
+<% end %>
